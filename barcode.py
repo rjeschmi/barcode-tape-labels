@@ -16,8 +16,8 @@ barcode_tmpl = read_file('./barcode_template')
 
 code_arr = [] 
 
-for i in range(17,23):
-	code_arr.append('AR10%sL4' % i)
-	code_arr.append('AR10%sL4' % i)
+for i in range(1,7):
+	code_arr.append('BI00%02dL4' % i)
+	code_arr.append('BI00%02dL4' % i)
 
 print (barcode_tmpl % tuple(code_arr))
